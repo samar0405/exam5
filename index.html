@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Sidebar</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head">
+          <button class="sidebar-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+            >
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+          </button>
+          <h1>HOME</h1>
+        </div>
+        <div class="sidebar">
+          <ul>
+            <li><a href="../pages/product.html">Products</a></li>
+            <li><a href="#">Online Tickets</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="input1">
+          <h1 style="padding-top: 24px">
+            On this page You apply for a ticket to attend the student party
+          </h1>
+          <form action="" class="form1">
+            <input
+              type="text"
+              class="form-control typeproduct"
+              placeholder="Name and Surname"
+            />
+            <br />
+            <input
+              type="text"
+              class="form-control price"
+              placeholder="Phone Number"
+            />
+            <br />
+            <input
+              type="email"
+              class="form-control email"
+              placeholder="Email"
+            />
+            <br />
+            <input type="number" class="form-control age" placeholder="Age" />
+            <br />
+            <input
+              type="text"
+              class="form-control group"
+              placeholder="Your Group"
+            />
+            <br />
+            <h1>The date you want to buy a ticket</h1>
+            <br />
+            <input type="date" class="form-control date" placeholder="Date" />
+            <br />
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="margin-bottom: 24px"
+            >
+              Add
+            </button>
+            <br />
+            <h1>
+              By clicking the Add button, you submit your application, and if
+              your information appears at the bottom, your application is
+              considered accepted. You can click the delete button to cancel the
+              application
+            </h1>
+          </form>
+
+          <table class="table table-striped table1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Group</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
